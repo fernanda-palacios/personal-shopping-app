@@ -1,0 +1,31 @@
+{
+  "name": "donavi-web-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Donavi/donavi-web-app.git",
+  "author": "FernandaPalacios <ferpalacios.a@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@material-ui/pickers": "^3.3.10",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.22.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^5.12.11"
+  },
+  "engines": {
+    "node": "14.17"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
