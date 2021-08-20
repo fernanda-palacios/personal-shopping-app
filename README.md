@@ -13,9 +13,9 @@
 ```
 
 
-## run back-end
+## Run back-end
 - `yarn start`
 
-## run front-end (back-end needs to be running too)
+## Run front-end
 - `cd client`
 - `yarn start`
