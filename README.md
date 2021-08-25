@@ -19,3 +19,6 @@
 ## Run front-end
 - `cd client`
 - `yarn start`
+
+<img src="img/items.png">
+<img src="img/list.png">
