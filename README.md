@@ -20,5 +20,4 @@
 - `cd client`
 - `yarn start`
 
-<img src="img/items.png">
-<img src="img/list.png">
+<img src="img/list.png" width="400" height="400"> <img src="img/items.png" width="400" height="400"> 
