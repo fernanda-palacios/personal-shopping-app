@@ -4,7 +4,7 @@ import AuthFormLayout from '../components/AuthFormLayout';
 import SigninForm from '../components/SigninForm';
 
 
-const Home = () => {
+const Login = () => {
 
   const classes = useStyles();
   return (
@@ -30,4 +30,4 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
  
-export default Home;
+export default Login;

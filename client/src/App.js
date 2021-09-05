@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './donavi-logo.png';
 import {  makeStyles } from '@material-ui/core';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import Home from './pages/Home';
+import Login from './pages/Login';
 import Signup from './pages/Signup';
-import UserHomePage from './pages/UserHomePage';
+import ListsDashboardPage from './pages/ListsDashboardPage';
 import ListPage from './pages/ListPage';
 import { AuthUserProvider } from './contexts/AuthUser';
 import Questionnaire from './pages/Questionnaire';
@@ -22,13 +22,13 @@ export default function App() {
           
           <Switch>
             <Route exact path='/'>
-              <Home />
+              <Login />
             </Route>
             <Route exact path='/signup'>
               <Signup />
             </Route>
             <Route path='/profile/:username'>
-              <UserHomePage />
+              <ListsDashboardPage />
             </Route>
             <Route path='/list/:username/:listId'>
               <ListPage />

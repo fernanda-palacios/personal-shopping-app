@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import withAuth from '../hoc/withAuth'
-import Wishlist from '../components/Wishlist';
+import Wishlist from '../components/ShoppingList';
 import ProfileLayout from '../components/ProfileLayout';
 import { Button, Grid, Paper, Typography, IconButton, CircularProgress } from '@material-ui/core';
 import { Redirect } from 'react-router-dom';
@@ -17,7 +17,7 @@ import useDeleteList from '../hooks/auth/useDeleteList';
 
 
 
-const UserHomePage = () => {
+const ListsDashboardPage = () => {
   const classes = useStyles();
 
   const { username } = useParams();
@@ -143,4 +143,4 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default withAuth(UserHomePage);
+export default withAuth(ListsDashboardPage);

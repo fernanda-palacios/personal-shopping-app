@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import { useParams } from 'react-router-dom';
 import withAuth from '../hoc/withAuth'
-import Wishlist from '../components/Wishlist';
+import ShoppingList from '../components/ShoppingList';
 import ProfileLayout from '../components/ProfileLayout';
 import { Button } from '@material-ui/core';
 import { Redirect } from 'react-router-dom';
@@ -13,7 +13,7 @@ const ListPage = () => {
 
   return (
     <ProfileLayout username={username}>
-      <Wishlist />
+      <ShoppingList/>
     </ProfileLayout>
   );
 }

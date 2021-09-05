@@ -3,7 +3,7 @@ import { Typography, Grid, IconButton, Box, CircularProgress } from '@material-u
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import NewItemModal from './modals/NewItemModal';
 import { makeStyles } from "@material-ui/core/styles";
-import ItemsList from '../components/ItemsList';
+import ItemsList from './ItemsList';
 import { useQuery } from 'react-query'
 import useAddWishlistItem from '../hooks/auth/useAddWishlistItem';
 import useDeleteWishlistItem from '../hooks/auth/useDeleteWishlistItem';
@@ -13,7 +13,7 @@ import { Redirect } from 'react-router-dom';
 
 
 
-const Wishlist = () => {
+const ShoppingList = () => {
   const classes = useStyles();
 
   const { username, listId } = useParams()
@@ -156,4 +156,4 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default Wishlist
+export default ShoppingList
